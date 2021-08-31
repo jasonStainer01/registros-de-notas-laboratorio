@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "resultado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>resultado</h2>
+
+
+@using (Html.BeginForm("resultado", "notas", FormMethod.Post))
+{
+    <br />
+    <label>Estudiante</label>
+    <h4>@ViewBag.Nombre</h4>
+    <br />
+    <label>Periodo1</label>
+    <h4>@ViewBag.total1</h4>
+    <br />
+    <label>Periodo2</label>
+    <h4>@ViewBag.total2</h4>
+    <br />
+    <label>Periodo3</label>
+    <h4>@ViewBag.total3</h4>
+    <br />
+    <label>Nota</label>
+    <h4>@ViewBag.total</h4>
+
+    <input type="submit">
+}

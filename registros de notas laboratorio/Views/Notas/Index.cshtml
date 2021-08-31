@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>INDEX</h2>
+
+@using (Html.BeginForm("resultado", "notas", FormMethod.Post))
+{
+    <label>Nombre</label>
+    <br />
+    <input type="text" name="Nombre">
+    <br />
+    <label>Primer Laboratorio</label>
+    <br />
+    <input type="text" name="L1">
+    <br />
+    <label>Primer Parcial</label>
+    <br />
+    <input type="text" name="P1">
+    <br />
+    <label>Segundo Laboratorio</label>
+    <br />
+    <input type="text" name="L2">
+    <br />
+    <label>Segundo Parcial</label>
+    <br />
+    <input type="text" name="P2">
+    <br />
+    <label>Tercer Laboratorio</label>
+    <br />
+    <input type="text" name="L3">
+    <br />
+    <label>Tercer Parcial</label>
+    <br />
+    <input type="text" name="P3">
+
+    <input type="submit">
+}
+
